@@ -9,11 +9,12 @@ import javax.inject.Inject
 class MainActivity : AppCompatActivity() {
 
     @Inject
-    lateinit var car: Car      //Field Injection
+    lateinit var car: Car      //Constructor  Injection
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         car.getCar()
     }
 
